@@ -33,7 +33,7 @@ lp_problems/  # empty dir
 milp_problems/
   - problem1.mps
   - problem2.mps
-sols/  # empty dir
+sols/ 
   - problem1.sol
   - problem2.sol
 output/  # empty dir
