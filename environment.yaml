@@ -1,0 +1,8 @@
+name: features-builder-env  # Virtual environment name
+dependencies:
+  - python=3.10
+  - conda-forge::scip=8.0.3  # for SCIP 8.0.3; SCIP 8.1.0 works worse
+  - conda-forge::pyscipopt  # for PySCIPOpt
+  - pip
+  - pip:
+      - -r requirements.txt  # ./requirements.txt
