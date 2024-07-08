@@ -85,7 +85,7 @@ class FeatureMatrixBuilder:
         записывает релаксированную задачу в lp-файл
         """
         lp_name = path_to_lp_file.name.split(".")[0]
-        rel_file_name = f"{relaxed_lp_file_dir}\{lp_name}_relaxed.lp"
+        rel_file_name = f"{relaxed_lp_file_dir}\\{lp_name}_relaxed.lp"
         model = Model(solver_name=CBC)
         model.read(str(path_to_lp_file))
         model.relax()
@@ -144,10 +144,10 @@ class FeatureMatrixBuilder:
                 )
 
                 features_file_name = (
-                    f"{self._path_to_output_dir}/features_{scenario_name}.csv"
+                    f"{self._path_to_output_dir}\\features_{scenario_name}.csv"
                 )
                 rel_features_file_name = (
-                    f"{self._path_to_output_dir}/rel_features_{scenario_name}.csv"
+                    f"{self._path_to_output_dir}\\rel_features_{scenario_name}.csv"
                 )
                 features_df = pd.read_csv(features_file_name, index_col="var")
                 rel_features_df = pd.read_csv(
