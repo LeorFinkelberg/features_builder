@@ -1,11 +1,11 @@
 ---
 # === ГЛАВНЫЙ КОНФИГУРАЦИОНЫЫЙ ФАЙЛ ===
 paths:
-  path_to_milp_files: !!str ./milp_problems  # путь до *.lp-, *.mps-файлов мат. постановки
-  path_to_lp_files: !!str ./lp_problems  # путь до релаксированных *.lp-, *.mps-файлов мат. постановки
-  path_to_sol_files: !!str ./sols  # путь до sol-файла решения задачи, если его нет, то target не будет добавляться
-  path_to_output_dir: !!str ./output  # путь до директории результатов
-  path_to_exe: !!str ./build/FeatureBuilder.exe  # путь до exe-файла экстрактора признаков
+  path_to_milp_files: !!str milp_problems  # путь до *.lp-, *.mps-файлов мат. постановки
+  path_to_lp_files: !!str lp_problems  # путь до релаксированных *.lp-, *.mps-файлов мат. постановки
+  path_to_sol_files: !!str sols  # путь до sol-файла решения задачи, если его нет, то target не будет добавляться
+  path_to_output_dir: !!str output  # путь до директории результатов
+  path_to_exe: !!str build\\FeatureBuilder.exe  # путь до exe-файла экстрактора признаков
 
 features:
   varBinaryOriginal:
