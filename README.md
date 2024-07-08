@@ -28,19 +28,24 @@ Note that in order to debug later, it is recommended to build SCIP in Debug mode
 
 ```bash
 ./  # root
-libstdc++-6.dll  # NB: May be required for Windows OS
+libstdc++-6.dll  # NB: Required for Windows OS!!!
 lp_problems/  # empty dir
+  - .gitkeep  # Remove
 milp_problems/
+  - .gitkeep  # Remove
   - problem1.mps
   - problem2.mps
 sols/ 
+  - .gitkeep  # Remove
   - problem1.sol
   - problem2.sol
 output/  # empty dir
+  - .gitkeep  # Remove
 ```
 
 ### Run features builder
 ```bash
+$ find . -name ".gitkeep" | xargs rm -f
 $ ./run.py
 ```
 
